@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Support @ThisIsMissEm / Emelia Smith</title>
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+  <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+  <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+</head>
+
+<body>
+  <p id="development-notice">Under Development: Please do not pay through this site yet!</p>
+  <main>
+    <h1>Support @ThisIsMissEm / Emelia Smith</h1>
+    <p>Your support enables me to work on the Fediverse, with a particular focus on improving moderation tooling and
+      trust & safety.</p>
+    <p>You can read my <a href="https://medium.com/@thismissem/" title="Emelia's Medium Posts" target="_blank"
+        rel="noopener">monthly updates</a> over
+      on my Medium.</p>
+    <a id="manage-payments" href="https://billing.stripe.com/p/login/eVa9EA3MUfJxbK08ww" rel="noopener">Manage
+      Payments</a>
+  </main>
+  <section>
+    <stripe-pricing-table pricing-table-id="prctbl_1OAFA3JyCZK9iUpoi5k7yIai"
+      publishable-key="pk_live_51OAEY7JyCZK9iUpos3ifwdhsEkFlr8IMReVZoZAhvQlMCFzfQDyIma0t3wf6c0my5qrVzN0GotHgQdqoNQxe8e3f00YPPiNHFL">
+    </stripe-pricing-table>
+  </section>
+  <section>
+    <stripe-pricing-table pricing-table-id="prctbl_1OAFrEJyCZK9iUpoOGfgJlEN"
+      publishable-key="pk_live_51OAEY7JyCZK9iUpos3ifwdhsEkFlr8IMReVZoZAhvQlMCFzfQDyIma0t3wf6c0my5qrVzN0GotHgQdqoNQxe8e3f00YPPiNHFL">
+    </stripe-pricing-table>
+  </section>
+  <section id="one-time-support">
+    <h2>One-Time Support</h2>
+    <p>Your one-time support can help provide me with additional funds to work with in a given month,<br /> however,
+      it's
+      generally best to support my work through recurring memberships.</p>
+
+    <stripe-buy-button buy-button-id="buy_btn_1OAGMIJyCZK9iUpo9kXk2ldv"
+      publishable-key="pk_live_51OAEY7JyCZK9iUpos3ifwdhsEkFlr8IMReVZoZAhvQlMCFzfQDyIma0t3wf6c0my5qrVzN0GotHgQdqoNQxe8e3f00YPPiNHFL">
+    </stripe-buy-button>
+  </section>
+  <footer>
+    <ul>
+      <li><a href="https://hachyderm.io/@ThisIsMissEm" rel="me"
+          title="Emelia on Mastodon / the Fediverse">@ThisIsMissEm@hachyderm.io</a></li>
+      <li><a href="https://github.com/ThisIsMissEm" title="Emelia on GitHub">GitHub</a></li>
+      <li><a href="https://linkedin.com/in/ThisIsMissEm" title="Emelia on LinkedIn">LinkedIn</a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>

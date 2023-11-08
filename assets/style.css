@@ -1,0 +1,95 @@
+@import url(https://fonts.bunny.net/css?family=open-sans:500,700);
+
+html {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: white;
+  color: #222;
+  padding: 4rem 10px;
+  margin: 0;
+}
+
+#development-notice {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 1.5rem 1rem;
+  background: plum;
+  font-weight: bold;
+}
+
+main, section, footer {
+  margin: 2rem auto 0;
+  max-width: 80%;
+}
+
+main a {
+  color: rgb(255, 38, 131);
+}
+
+main a:hover,
+main a:focus,
+main a:active {
+  color: rgb(129, 0, 56);
+}
+
+main {
+  text-align: center;
+}
+
+#manage-payments {
+  position: absolute;
+  top: 0;
+  right: 3rem;
+  padding: 1rem;
+  background: #eee;
+  color: #222;
+  border-radius: 0 0 1rem 1rem;
+}
+
+#manage-payments:hover,
+#manage-payments:focus {
+  background:rgb(255, 38, 131);
+  color: white;
+}
+
+#one-time-support {
+  text-align: center;
+}
+
+section {
+  min-height: 300px;
+  transition: height 2s ease-in-out;
+}
+
+footer {
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+}
+footer ul li {
+  display: inline-block;
+}
+
+footer ul li + li:before {
+  content: " / ";
+}
+
+footer ul li a {
+  color: #666;
+}
+
+footer ul li a:hover,
+footer ul li a:focus {
+  color: rgb(255, 38, 131);
+}
