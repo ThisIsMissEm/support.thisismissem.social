@@ -15,6 +15,17 @@ body {
   margin: 0;
 }
 
+hr {
+  border: none;
+  background: none;
+  text-align: center;
+}
+
+hr:before {
+  content: "• • •";
+  color: #aaa;
+}
+
 #development-notice {
   position: absolute;
   top: 0;
@@ -67,22 +78,18 @@ main h1 {
   color: white;
 }
 
-#one-time-support {
-  text-align: center;
-}
-
 section {
   min-height: 300px;
   transition: height 2s ease-in-out;
 }
 
-footer {
+#one-time-support {
+  min-height: 365px;
   text-align: center;
 }
 
-footer:before {
-  content: "• • •";
-  color: #ccc;
+footer {
+  text-align: center;
 }
 
 footer ul {
