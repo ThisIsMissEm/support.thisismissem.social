@@ -8,6 +8,7 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  line-height: 1.6rem;
   background: white;
   color: #222;
   padding: 6rem 10px;
@@ -31,16 +32,6 @@ main, section, footer {
   max-width: 80%;
 }
 
-@media screen and (max-width: 1024px) {
-  main, section, footer {
-    max-width: 100%;
-  }
-
-  #one-time-support br {
-    display: none;
-  }
-}
-
 main a {
   color: rgb(255, 38, 131);
 }
@@ -53,6 +44,10 @@ main a:active {
 
 main {
   text-align: center;
+}
+
+main h1 {
+  line-height: 1.4em;
 }
 
 #manage-payments {
@@ -85,16 +80,25 @@ footer {
   text-align: center;
 }
 
+footer:before {
+  content: "• • •";
+  color: #ccc;
+}
+
 footer ul {
   list-style-type: none;
   margin: 0;
-}
-footer ul li {
-  display: inline-block;
+  padding: 0;
 }
 
-footer ul li + li:before {
-  content: " / ";
+footer ul li {
+  display: block;
+}
+
+footer ul li a {
+  padding: 0.2rem;
+  margin: 0.5rem;
+  display: inline-block;
 }
 
 footer ul li a {
@@ -104,4 +108,33 @@ footer ul li a {
 footer ul li a:hover,
 footer ul li a:focus {
   color: rgb(255, 38, 131);
+}
+
+
+@media screen and (max-width: 1024px) {
+  main, section, footer {
+    max-width: 100%;
+  }
+
+  section {
+    min-height: 1070px;
+  }
+
+  #one-time-support {
+    min-height: 430px;
+  }
+
+  main h1 {
+    font-size: 1.6rem;
+  }
+
+  main,
+  #one-time-support {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  #one-time-support br {
+    display: none;
+  }
 }
