@@ -69,9 +69,9 @@ nav {
 
 nav > a {
   display: inline-block;
-  padding: 1rem;
-  border-radius: 0 0 1rem 1rem;
-  margin: 0 0.5rem;
+  padding: 1em;
+  border-radius: 0 0 1em 1em;
+  margin: 0 0.5em;
   border: 0px 1px 1px 1px solid hsla(0,0%,100%,0.1);
   background: rgba(26, 26, 26, 0.05);
   color: #222;
@@ -94,7 +94,6 @@ nav > a {
   background: #222;
   color: #fff;
 }
-
 
 section {
   min-height: 300px;
@@ -139,6 +138,34 @@ footer ul li a:focus {
 @media screen and (max-width: 1024px) {
   main, section, footer {
     max-width: 100%;
+  }
+
+  nav {
+    left: 0;
+    right: 0;
+    font-size: 0.8rem;
+    display: flex;
+  }
+  nav > a {
+    margin: 0;
+    flex-grow: 1;
+    border-radius: 0;
+    text-align: center;
+  }
+
+  #manage-payments {
+    background:rgb(255, 38, 131);
+    color: white;
+  }
+
+  #ko-fi {
+    background: #ff5f5f;
+    color: #fff;
+  }
+
+  #github-sponsors {
+    background: #222;
+    color: #fff;
   }
 
   section {
