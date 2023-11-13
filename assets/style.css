@@ -61,15 +61,20 @@ main h1 {
   line-height: 1.4em;
 }
 
-#manage-payments {
+nav {
   position: absolute;
   top: 0;
-  right: 3rem;
+  right: 2.5rem;
+}
+
+nav > a {
+  display: inline-block;
   padding: 1rem;
-  background: rgba(26, 26, 26, 0.05);
-  border: 0px 1px 1px 1px solid hsla(0,0%,100%,0.1);
-  color: #222;
   border-radius: 0 0 1rem 1rem;
+  margin: 0 0.5rem;
+  border: 0px 1px 1px 1px solid hsla(0,0%,100%,0.1);
+  background: rgba(26, 26, 26, 0.05);
+  color: #222;
 }
 
 #manage-payments:hover,
@@ -77,6 +82,19 @@ main h1 {
   background:rgb(255, 38, 131);
   color: white;
 }
+
+#ko-fi:hover,
+#ko-fi:focus {
+  background: #ff5f5f;
+  color: #fff;
+}
+
+#github-sponsors:hover,
+#github-sponsors:focus {
+  background: #222;
+  color: #fff;
+}
+
 
 section {
   min-height: 300px;
