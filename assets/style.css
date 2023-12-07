@@ -26,6 +26,10 @@ hr:before {
   color: #aaa;
 }
 
+address {
+  font-style: normal;
+}
+
 #development-notice {
   position: absolute;
   top: 0;
