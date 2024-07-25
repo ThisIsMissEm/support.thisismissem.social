@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.6rem;
   background: white;
   color: #222;
@@ -42,7 +42,9 @@ address {
   font-weight: bold;
 }
 
-main, section, footer {
+main,
+section,
+footer {
   margin: 2rem auto 0;
   max-width: 80%;
 }
@@ -59,10 +61,18 @@ main a:active {
 
 main {
   text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 main h1 {
   line-height: 1.4em;
+}
+
+#address-requirement-footnote {
+  max-width: 600px;
+  font-style: italic;
 }
 
 nav {
@@ -76,14 +86,14 @@ nav > a {
   padding: 1em;
   border-radius: 0 0 1em 1em;
   margin: 0 0.5em;
-  border: 0px 1px 1px 1px solid hsla(0,0%,100%,0.1);
+  border: 0px 1px 1px 1px solid hsla(0, 0%, 100%, 0.1);
   background: rgba(26, 26, 26, 0.05);
   color: #222;
 }
 
 #manage-payments:hover,
 #manage-payments:focus {
-  background:rgb(255, 38, 131);
+  background: rgb(255, 38, 131);
   color: white;
 }
 
@@ -107,6 +117,37 @@ section {
 #one-time-support {
   min-height: 365px;
   text-align: center;
+}
+
+#supporters-list {
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#supporters-list h2 {
+  text-align: center;
+}
+
+#supporters-list ul {
+  list-style-type: none;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  min-width: 600px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#supporters-list a {
+  color: rgb(255, 38, 131);
+}
+
+#supporters-list a:hover,
+#supporters-list a:focus {
+  color: rgb(129, 0, 56);
 }
 
 footer {
@@ -138,10 +179,23 @@ footer ul li a:focus {
   color: rgb(255, 38, 131);
 }
 
-
 @media screen and (max-width: 1024px) {
-  main, section, footer {
+  main,
+  section,
+  footer {
     max-width: 100%;
+  }
+
+  #supporters-list ul {
+    min-width: auto;
+    columns: 1;
+    -moz-columns: 1;
+    -webkit-columns: 1;
+  }
+
+  #supporters-list ul li {
+    display: inline-block;
+    margin: 5px 20px;
   }
 
   nav {
@@ -158,7 +212,7 @@ footer ul li a:focus {
   }
 
   #manage-payments {
-    background:rgb(255, 38, 131);
+    background: rgb(255, 38, 131);
     color: white;
   }
 
