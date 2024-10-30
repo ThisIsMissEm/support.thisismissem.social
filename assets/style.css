@@ -198,6 +198,12 @@ nav > a {
   color: #fff;
 }
 
+#get-assistance:hover,
+#get-assistance:focus {
+  background: #563acc;
+  color: #fff;
+}
+
 section {
   min-height: fit-content;
   transition: height 2s ease-in-out;
@@ -337,6 +343,11 @@ footer ul li a:focus {
 
   #github-sponsors {
     background: #222;
+    color: #fff;
+  }
+
+  #get-assistance {
+    background: #563acc;
     color: #fff;
   }
 
