@@ -177,6 +177,7 @@ nav > a {
   border: 0px 1px 1px 1px solid hsla(0, 0%, 100%, 0.1);
   background: rgba(26, 26, 26, 0.05);
   color: var(--text-color);
+  text-decoration: none;
 }
 
 #manage-payments:hover,
@@ -216,7 +217,7 @@ section > h2:first-child {
   column-gap: 50px;
   grid-auto-columns: 50%;
   grid-auto-flow: column;
-  margin: 2rem auto 2rem;
+  margin: 2rem auto 48px;
   max-width: 70%;
 }
 
