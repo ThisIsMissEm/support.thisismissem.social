@@ -220,48 +220,17 @@ section > h2:first-child {
 
 #services {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 50px;
-  grid-auto-columns: 50%;
-  grid-auto-flow: column;
+  row-gap: 48px;
   margin: 2rem auto 48px;
   max-width: 70%;
 }
 
-#supporters-list {
-  min-height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 32px;
-}
-
-#supporters-list h2 {
-  text-align: center;
-}
-
-#supporters-list ul {
-  list-style-type: none;
-  columns: 3;
-  -webkit-columns: 3;
-  -moz-columns: 3;
-  min-width: 600px;
-  text-align: center;
-  margin: 0 0 16px;
-  padding: 0px;
-}
-
-#supports-list ul li {
-  display: inline-block;
-}
-
-#supporters-list a {
-  color: var(--pink);
-}
-
-#supporters-list a:hover,
-#supporters-list a:focus {
-  color: var(--medium-pink);
+#services > .service:only-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+  max-width: 40rem;
 }
 
 footer {
@@ -304,18 +273,6 @@ footer ul li a:focus {
   section,
   footer {
     max-width: 100%;
-  }
-
-  #supporters-list ul {
-    min-width: auto;
-    columns: 1;
-    -moz-columns: 1;
-    -webkit-columns: 1;
-  }
-
-  #supporters-list ul li {
-    display: inline-block;
-    margin: 5px 20px;
   }
 
   nav {
